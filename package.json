@@ -1,0 +1,25 @@
+{
+  "name": "petfinder",
+  "version": "1.0.0",
+  "description": "Automated tests for the Petfinder API",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Draxxem/Petfinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Draxxem/Petfinder/issues"
+  },
+  "homepage": "https://github.com/Draxxem/Petfinder#readme"
+}
