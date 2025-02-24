@@ -1,4 +1,4 @@
-export function logAllTypes(json) {
+export function printAllTypes(json) {
 
        json.types.forEach(type => {
         console.log(`Name: ${type.name}`);

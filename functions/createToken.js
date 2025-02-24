@@ -1,16 +1,14 @@
-const tokenUrl = 'https://api.petfinder.com/v2/oauth2/token';
-const clientId = 'SxYG14fyLWuLer7kJfCZJIt47nCYSeJ8CiKXsQK2ZUb8UoBmAT';
-const clientSecret = 'JhOnYv2ahQxt1vPfJkpNXFf8lbwtZJD4Z4YrAdgs';
-const redirectUri = 'https://api.petfinder.com/v2/types';
+const CLIENT_ID = 'SxYG14fyLWuLer7kJfCZJIt47nCYSeJ8CiKXsQK2ZUb8UoBmAT';
+const CLIENT_SECRET = 'JhOnYv2ahQxt1vPfJkpNXFf8lbwtZJD4Z4YrAdgs';
 
 const formData = new URLSearchParams();
 formData.append('grant_type', 'client_credentials');
-//formData.append('code', authorizationCode);
-formData.append('redirect_uri', redirectUri);
-formData.append('client_id', clientId);
-formData.append('client_secret', clientSecret);
+formData.append('client_id', CLIENT_ID);
+formData.append('client_secret', CLIENT_SECRET);
 
 let generatedToken = '';
+
+const tokenUrl = 'https://api.petfinder.com/v2/oauth2/token';
 
 let token = {
     getToken: async function (request) {
@@ -24,8 +22,7 @@ let token = {
             if (response.ok) {
                 const accessToken = data.access_token;
                 generatedToken = accessToken;
-                //console.log('Access Token:', accessToken);
-                // Store the access token for future API calls
+
             } else {
                 console.error('Error fetching access token:', data);
             }
