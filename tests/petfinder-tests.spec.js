@@ -4,8 +4,10 @@ let display = require('../functions/listAllTypes.js');
 let accessToken = '';
 
 test.beforeAll(async ({ request }) => {
+
   let token = await bearerToken.getToken(request);
   accessToken = token;
+  
 })
 
 test('Retrieve a list of all animal types available on Petfinder | @workflow', async ({ request }) => {
