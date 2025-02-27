@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Draxxem/Petfinder#readme",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "monocart-reporter": "^2.9.15",
     "simple-oauth2": "^5.1.0"
   }
