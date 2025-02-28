@@ -29,6 +29,15 @@ A test job is triggered whenever a branch gets merged into main branch
 2. A Test report is available to download by selecting a Workflow run ---> https://github.com/Draxxem/Petfinder/actions
 ![alt text](image.png)
 
+#Instructions on how to securly setup Petsfinder API Credentials
+1. You need to create a PetFiner account https://www.petfinder.com/
+2. Once you have the account you would need to be logged in, then visit https://www.petfinder.com/developers/
+3. Generate the client id and client secret for Petfinder
+4. Create an account with a open source Secrets Manager website
+5. Once setup, store the Petfinder API client_id and secret_id on the secret manager's vault
+6. generate client_id and client_secret for HashiCorp vault, this is needed to generate access_token to securely call the HashiCorp endpoint
+6. Call the vault from the application or test framework in order to retrieve the Petfinder client_id and client_secret, which will be used to generate an access token in order to authorise the call to the petfinder API
+
 #Overview of project structure
 - The root directory contains key configuration files such as package.json for dependencies and .env, .gitignore 
 - The tests folder contains the file with the tests
