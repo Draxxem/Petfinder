@@ -10,7 +10,7 @@ Download latest version of Visual Studio Code
 
 How to run the tests
 - From terminal
-1. To execute all tests run the following command 'npx playwright test --grep "@workflow"'
+1. To execute all tests run the following command 'npx playwright test'
 2. To execute all tests tagged as '@workflow' only, run the following command 'npx playwright test --grep "@workflow"'
 3. To view test Report run 'npx monocart show-report test-results/report.html'
 
